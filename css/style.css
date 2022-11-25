@@ -1,0 +1,123 @@
+* {
+	box-sizing: border-box;
+}
+
+/* for BusService */
+.navbar-brand {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	color:#fff;
+	padding: 10px;
+}
+
+.custom-nav .custom-nav-item a {
+	color: #fff !important;
+	padding: 15px;
+}
+
+/*for ul navbar*/
+.custom-nav-item:hover {
+	background-color: #dc3545;
+	border: solid #dc3545 1px;
+	border-radius: 10px;
+}
+
+/*for video*/
+.remove-vid-marg {
+	margin: 0px;
+	padding: 0px;
+}
+
+.vid-parent {
+	position: relative;
+}
+video {
+	width: 100%;
+	height: 100%;
+}
+/*for overlay(like blue) */
+.vid-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #225470;
+	z-index: 1;
+	opacity: 0.6;
+}
+/*text-in-between-video*/
+.vid-content {
+	position: absolute;
+	z-index: 2;
+	top: 35%;
+	left: 35%;
+	text-align: center;
+	color: #fff;
+	font-size: 10px;
+}
+/*for banner*/
+.bottom-banner {
+	color: #fff;
+	padding: 10px;
+	font-size: 5px;
+}
+/*for contact info*/
+.stripe {
+	background-image: linear-gradient(240deg, #ed123a, #93291e);
+	padding: 3rem;
+	height: 13rem;
+	margin-top: 4rem;
+	transform: rotate(10deg);
+	z-index: -5;
+}
+/*for form password eye icon*/
+.eye{
+    position:relative;
+	right: -436px;
+    top: -30px;
+    padding-right: 1.3em;
+}
+
+#hide1{
+	display:none; 
+
+}
+/*for form repassword eye icon*/
+.eye1{
+    position:relative;
+	right: -436px;
+    top: -32px;
+    padding-right: 1.3em;
+}
+#hide3{
+	
+	display:none; 
+}
+
+
+/*for responsivess mobile-friendly*/
+@media screen and (min-width: 0px) and (max-width: 700px) {
+	.my-content,
+	.txt-banner,
+	.stripe {
+		display: none;
+	}
+
+	.vid-content {
+		top: 12%;
+		left: 60%;
+	}
+
+	.custom-nav .custom-nav-item a {
+		padding: 10px 20px;
+		background-color: #225470;
+	}
+
+	.custom-nav-item:hover {
+		background-color: none;
+		border: none;
+		border-radius: none;
+	}
+}

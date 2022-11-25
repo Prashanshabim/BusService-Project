@@ -1,0 +1,13 @@
+      /*for images*/
+      .hero{
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        overflow: hidden;
+    }
+    
+    .hero .carousel{
+        width: 300px;
+        margin: 30px auto 0;
+        overflow: visible;
+    }

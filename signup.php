@@ -39,7 +39,7 @@
 							</div>
                             <div class="form-group">
                             <i class="fa-solid fa-phone"></i><label for="phonenum" class="pl-2 font-weight-bold">Phone Number</label>
-							   <input type="tel" class="form-control" maxlength=10 placeholder="Enter Number" name="phonenum" id="phonenum" required="">
+							   <input type="number" class="form-control" maxlength = 10 placeholder="Enter Number" name="phonenum" id="phonenum" required="">
 							</div>
 							<div class="form-group">
 							<i class="fa-solid fa-user-secret"></i><label for="usertype" class="pl-2 font-weight-bold">User</label>

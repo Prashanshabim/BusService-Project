@@ -27,17 +27,25 @@ if(isset($_POST['submit']))
         $query="insert into user(username,email,password,phonenum,usertype) values('$username','$email','$password',$phonenum,'$usertype')";
         }else{
             echo"<script>alert('Password doesnot match please register again!')</script>";
+            ?>
+            <META HTTP-EQUIV="Refresh" CONTENT="0; URL=http://localhost/project/dashboardfetch/adduser.php">
+            <?php
+
         }
         $result=mysqli_query($con,$query)or die(mysqli_error($con));
         if($query)
         {   
             echo"<script>alert('Registration Successful!')</script>";
-            echo"<meta http-equiv='refresh' content='0'>";
+            ?>
+             <META HTTP-EQUIV="Refresh" CONTENT="0; URL=http://localhost/project/dashboardfetch/users.php">
+             <?php
         }
         else
         {
             echo "<script>alert('Please! Register Again!')</script>";
-            echo "<meta http-equiv='refresh' content='0'>";
+            ?>
+             <META HTTP-EQUIV="Refresh" CONTENT="0;">
+             <?php
         }
         }
     

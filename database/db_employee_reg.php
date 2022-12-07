@@ -53,7 +53,7 @@ include('db_connect.php');
         }
         
          //checking
-        $checkExistance = "SELECT * FROM employee_registration WHERE email='$email' AND mobilenum = '$mobilenum'";
+        $checkExistance = "SELECT * FROM employee_registration WHERE email='$email'";
         $email_query_run = mysqli_query($con,$checkExistance);
         if(mysqli_num_rows($email_query_run) > 0)
         {

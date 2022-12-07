@@ -10,17 +10,17 @@ include('dashboardheader.php');
     <form action="" method="POST">
         <div class="form-group">
             <label for="bus_number">Bus Number</label>
-            <input type="text" class="form-control" id="bus_number" name="bus_number" require="">
+            <input type="text" class="form-control" id="bus_number" name="bus_number" required>
         </div>
 
         <div class="form-group">
             <label for="bus_driver">Bus Driver</label>
-            <input type="text" class="form-control" id="bus_driver" name="bus_driver" require="">
+            <input type="text" class="form-control" id="bus_driver" name="bus_driver" required>
         </div>
         
         <div class="form-group">
             <label for="driver_helper">Driver Helper</label>
-            <input type="text" class="form-control" id="driver_helper" name="driver_helper" require="">
+            <input type="text" class="form-control" id="driver_helper" name="driver_helper" required>
         </div>
 
         <div class="form-group">
@@ -60,7 +60,7 @@ include('dashboardheader.php');
 
         <div class="form-group">
             <label for="date">Date</label>
-            <input type="date" class="form-control" id="date" name="date" require="">
+            <input type="date" class="form-control" id="date" name="date" required>
         </div>
 
         <div class="text-center">

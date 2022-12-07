@@ -187,27 +187,27 @@ form .buttons button {
                     <div class="fields">
                         <div class="input-field">
                             <label>Full Name</label>
-                            <input type="text" name="fullname" placeholder="Enter your name"  >
+                            <input type="text" name="fullname" placeholder="Enter your name"  required >
                         </div>
 
                         <div class="input-field">
                             <label>Date of Birth</label>
-                            <input type="date"name="dob" placeholder="Enter birth date"  >
+                            <input type="date"name="dob" placeholder="Enter birth date" required >
                         </div>
 
                         <div class="input-field">
                             <label>Email</label>
-                            <input type="text" name="email" placeholder="Enter your email"  >
+                            <input type="text" name="email" placeholder="Enter your email" required >
                         </div>
 
                         <div class="input-field">
                             <label>Mobile Number</label>
-                            <input type="text" name="mobilenum" placeholder="Enter mobile number"  >
+                            <input type="number" name="mobilenum" maxlength=10 placeholder="Enter mobile number" required >
                         </div>
 
                         <div class="input-field">
                             <label>Gender</label>
-                            <select name="gender"  >
+                            <select name="gender" require >
                                 <option disabled selected>Select gender</option>
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
@@ -217,7 +217,7 @@ form .buttons button {
 
                         <div class="input-field">
                             <label>Occupation</label>
-                            <input type="text" name="occupation" placeholder="Enter your occupation"  >
+                            <input type="text" name="occupation" placeholder="Enter your occupation" required >
                         </div>
                     </div>
                 </div>
@@ -228,32 +228,32 @@ form .buttons button {
                     <div class="fields">
                         <div class="input-field">
                             <label>Father Name</label>
-                            <input type="text" name="fathername" placeholder="Enter father name"  >
+                            <input type="text" name="fathername" placeholder="Enter father name" required >
                         </div>
 
                         <div class="input-field">
                             <label>Mother Name</label>
-                            <input type="text" name="mothername" placeholder="Enter mother name"  >
+                            <input type="text" name="mothername" placeholder="Enter mother name" required >
                         </div>
 
                         <div class="input-field">
                             <label>Other Family Member Name</label>
-                            <input type="text" name="familymembername" placeholder="Enter brother/sister/other name"  >
+                            <input type="text" name="familymembername" placeholder="Enter brother/sister/other name" required >
                         </div>
 
                         <div class="input-field">
                             <label>Father Occupation</label>
-                            <input type="text"  name="fatheroccupation" placeholder="Enter father occupation"  >
+                            <input type="text"  name="fatheroccupation" placeholder="Enter father occupation" required >
                         </div>
 
                         <div class="input-field">
                             <label>Mother Occupation</label>
-                            <input type="text" name="motheroccupation" placeholder="Enter mother occupation"  >
+                            <input type="text" name="motheroccupation" placeholder="Enter mother occupation" required >
                         </div>
                         
                         <div class="input-field">
                             <label>Mobile Number</label>
-                            <input type="text" name="parentnum" placeholder="Enter parents mobile number"  >
+                            <input type="number" name="parentnum" maxlength=10 placeholder="Enter parents mobile number" required >
                         </div>
 
                     <div class="Address">
@@ -262,32 +262,32 @@ form .buttons button {
                     <div class="fields">
                         <div class="input-field">
                             <label>Address Type</label>
-                            <input type="text" name="addtype" placeholder="Enter address type permanent or temporary"  >
+                            <input type="text" name="addtype" placeholder="Enter address type permanent or temporary" required >
                         </div>
 
                         <div class="input-field">
                             <label>Nationality</label>
-                            <input type="text" name="nationality" placeholder="Enter Nationality"  >
+                            <input type="text" name="nationality" placeholder="Enter Nationality" required >
                         </div>
 
                         <div class="input-field">
                             <label>District</label>
-                            <input type="text" name="district" placeholder="Enter district"  >
+                            <input type="text" name="district" placeholder="Enter district" required >
                         </div>
 
                         <div class="input-field">
                             <label>Municipality</label>
-                            <input type="text" name="municipality" placeholder="Enter municipality"  >
+                            <input type="text" name="municipality" placeholder="Enter municipality" required >
                         </div>
 
                         <div class="input-field">
                             <label>Ward</label>
-                            <input type="text" name="ward" placeholder="Enter ward"  >
+                            <input type="text" name="ward" placeholder="Enter ward" required >
                         </div>
                         
                         <div class="input-field">
                             <label>Full Recent Address</label>
-                            <input type="text" name="recentadd" placeholder="Enter full recent address"  >
+                            <input type="text" name="recentadd" placeholder="Enter full recent address" required >
                         </div>   
                     </div>
                 <div class="BusService">
@@ -296,13 +296,13 @@ form .buttons button {
                         
                     <div class="input-field">
                             <label>Batch</label>
-                            <input type="text" name="batch" placeholder="Enter your Batch"/>
+                            <input type="text" name="batch" placeholder="Enter your Batch" required>
                         </div>
 
                         
                     <div class="input-field">
                             <label>Faculty</label>
-                            <select name="faculty"  >
+                            <select name="faculty" required >
                                 <option disabled selected>Select Faculty</option>
                                 <option value="BIM">BIM</option>
                                 <option value="BCA">BCA</option>
@@ -314,7 +314,7 @@ form .buttons button {
                         
                         <div class="input-field">
                             <label>Semester</label>
-                            <select name="semester"  >
+                            <select name="semester" required >
                                 <option disabled selected>Select Semester</option>
                                 <option value="1st">1st</option>
                                 <option value="2nd">2nd</option>
@@ -331,7 +331,7 @@ form .buttons button {
                        
                         <div class="input-field">
                             <label>Route</label>
-                            <select name="route"  >
+                            <select name="route" required >
                                 <option disabled selected>Select Route</option>
                                 <option value="inside biratnagar(puspalal chowk to college area)">Inside Biratnagar(puspalal chowk to college area)</option>
                                 <option value="biratnagar to rangeli">Biratnagar To Rangeli</option>
@@ -344,7 +344,7 @@ form .buttons button {
 
                         <div class="input-field">
                             <label>Shift</label>
-                            <select  name ="shift"  >
+                            <select  name ="shift" required  >
                                 <option disabled selected>Select Shift</option>
                                 <option value="morning">Morning</option>
                                 <option value="day">Day</option>
@@ -353,7 +353,7 @@ form .buttons button {
 
                         <div class="input-field">
                             <label>Highway</label>
-                            <select  name ="highway"  >
+                            <select  name ="highway" required >
                                 <option disabled selected>Select Option</option>
                                 <option value="inside highway">Inside Highway</option>
                                 <option value="outside highway">Outside Highway</option>
@@ -369,7 +369,7 @@ form .buttons button {
                         <div class="input-field">
                             <label for="file">Attach your photo</label>
                             <br>
-                            <input type="file" name="file" id="photo"  >
+                            <input type="file" name="file" id="photo" required >
                         </div>
                             <button name="submitbtn" id="sweetalert" value="submitbtn" class="submit">
                             <span class="btnText">Submit</span>

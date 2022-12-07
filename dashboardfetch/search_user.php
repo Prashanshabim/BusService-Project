@@ -8,7 +8,7 @@
  <!--Table 1-->
     <p class="bg-dark text-white p-2" style="text-align:center;">Searched Data</p>
     <div class="container my-2" style="float:right;">
-    <form action="search_nab.php" method="POST">
+    <form action="search_user.php" method="POST">
         <input type="text" placeholder="Search here" name="searchText">
         <!-- <a href="search_nab.php"><button class="btn btn-dark btn-sm" name="submit">Search</search></a> -->
         <button class="btn btn-dark btn-sm" name="search">Search</search>

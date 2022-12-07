@@ -53,21 +53,17 @@ include('db_connect.php');
         
         //if the picture is in correct format 
         if(in_array($filecheck,$fileextstored)){
-            $destinationfile = 'stuupload/'.$filename;
+            $destinationfile = '../stuupload/'.$filename;
             move_uploaded_file($filetmp,$destinationfile);
-        }
-    
-
-        
+        }    
         
          //checking
-        $checkExistance = "SELECT * FROM student_registration WHERE email='$email' AND mobilenum = '$mobilenum'";
+        $checkExistance = "SELECT * FROM student_registration WHERE email='$email'";
         $email_query_run = mysqli_query($con,$checkExistance);
         if(mysqli_num_rows($email_query_run) > 0)
         {
             echo"<script>alert('Your Email is already registered!')</script>";
- 
-        }else{
+        }else{    
         //insert into database 
         $query="insert into student_registration values('','$fullname','$dob','$email','$mobilenum','$gender','$occupation','$fathername','$mothername','$familymembername','$fatheroccupation','$motheroccupation','$parentnum','$addtype','$nationality','$district','$municipality','$ward','$recentadd','$batch','$faculty','$semester','$route','$shift','$highway','$destinationfile')";
         $result=mysqli_query($con,$query)or die(mysqli_error($con));
@@ -83,7 +79,6 @@ include('db_connect.php');
         }
         }
     }
-
 
 ?>
 

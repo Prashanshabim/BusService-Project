@@ -198,7 +198,7 @@ form .buttons button {
 
                         <div class="input-field">
                             <label>Mobile Number</label>
-                            <input type="number" name="mobilenum" placeholder="Enter mobile number" required>
+                            <input type="number" name="mobilenum" maxlength=10 placeholder="Enter mobile number" required>
                         </div>
 
                         <div class="input-field">

@@ -1,16 +1,16 @@
 <?php
 include('dashboardheader.php');
 include "../database/db_connect.php";
-$students_query = "select * from user where usertype=1";
+$students_query = "select * from user where usertype = 1";
 $students_data = mysqli_query($con,$students_query);
 $students_total = mysqli_num_rows($students_data);
 
-$emp_query = "select * from user where usertype=2";
+$emp_query = "select * from user where usertype = 2";
 $emp_data = mysqli_query($con,$emp_query);
 $emp_total = mysqli_num_rows($emp_data);
 
-$driver_query = "select * from user where usertype=3";
-$driver_data = mysqli_query($con,$emp_query);
+$driver_query = "select * from user where usertype = 3";
+$driver_data = mysqli_query($con,$driver_query);
 $driver_total = mysqli_num_rows($driver_data);
 
 

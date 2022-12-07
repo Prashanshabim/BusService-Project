@@ -193,7 +193,7 @@ form .user-details .input-box{
 
           <div class="input-box">
             <span class="details">Route</span>
-            <input type="text" name="Route" placeholder="Enter Route" required>
+            <input type="text" name="route" placeholder="Enter Route" required>
           </div>
           
 

@@ -12,22 +12,22 @@ include('dashboardheader.php');
         <span class="title" style="text-decoration: underline; font-weight:bold;">Personal Details</span>
         <br>
             <label for="username">Full Name</label>
-            <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Enter your name" require="">
+            <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Enter your name" required>
         </div>
 
         <div class="form-group">
             <label for="dob">Date of Birth</label>
-            <input type="date" class="form-control" id="dob" name="dob" placeholder="Enter birth date"  require="">
+            <input type="date" class="form-control" id="dob" name="dob" placeholder="Enter birth date"  required>
         </div>
 
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"  require="">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"  required>
         </div>
         
         <div class="form-group">
             <label for="mobilenum">Mobile Number</label>
-            <input type="text" class="form-control" id="mobilenum" name="mobilenum" placeholder="Enter mobile number" require="">
+            <input type="text" class="form-control" id="mobilenum" name="mobilenum" placeholder="Enter mobile number" required>
         </div>
         <div class="form-group">
             <label for="gender">Gender</label>
@@ -42,61 +42,61 @@ include('dashboardheader.php');
   
         <div class="form-group">
             <label for="occupation">Occupation</label>
-            <input type="text" class="form-control" id="occupation" name="occupation" placeholder="Enter your occupation" require="">
+            <input type="text" class="form-control" id="occupation" name="occupation" placeholder="Enter your occupation" required>
         </div>
 
         <div class="form-group">
         <span class="title" style="text-decoration: underline; font-weight:bold;">Guardain Details</span>
         <br>
             <label for="fathername">Father Name</label>
-            <input type="text" class="form-control" id="fathername" name="fathername" placeholder="Enter father name" require="">
+            <input type="text" class="form-control" id="fathername" name="fathername" placeholder="Enter father name" required>
         </div>
 
         <div class="form-group">
             <label for="mothername">Mother Name</label>
-            <input type="text" class="form-control" id="mothername" name="mothername" placeholder="Enter mother name" require="">
+            <input type="text" class="form-control" id="mothername" name="mothername" placeholder="Enter mother name" required>
         </div>
         
         <div class="form-group">
             <label for="otherfamilymembername">Family Member Name</label>
-            <input type="text" class="form-control" id="otherfamilymembername" name="otherfamilymembername" placeholder="Enter brother/sister/other name" require="">
+            <input type="text" class="form-control" id="otherfamilymembername" name="otherfamilymembername" placeholder="Enter brother/sister/other name" required>
         </div>
 
         <div class="form-group">
             <label for="parentnum">Guardain Number</label>
-            <input type="text" class="form-control" id="parentnum" name="parentnum" placeholder="Enter parents mobile number" require="">
+            <input type="text" class="form-control" id="parentnum" name="parentnum" placeholder="Enter parents mobile number" >
         </div>
 
         <div class="form-group">
         <span class="title"  style="text-decoration: underline; font-weight:bold;">Address</span>
         <br>
             <label for="addtype">Address Type</label>
-            <input type="text" class="form-control" id="addtype" name="addtype"  placeholder="Enter address type permanent or temporary" require="">
+            <input type="text" class="form-control" id="addtype" name="addtype"  placeholder="Enter address type permanent or temporary" required>
         </div>
 
         <div class="form-group">
             <label for="nationality">Nationality</label>
-            <input type="text" class="form-control" id="nationality" name="nationality" placeholder="Enter Nationality" require="">
+            <input type="text" class="form-control" id="nationality" name="nationality" placeholder="Enter Nationality" required>
         </div>
 
         <div class="form-group">
             <label for="district">District</label>
-            <input type="text" class="form-control" id="district" name="district" placeholder="Enter district" require="">
+            <input type="text" class="form-control" id="district" name="district" placeholder="Enter district" required>
         </div>
 
         <div class="form-group">
             <label for="municipality">Municipality</label>
-            <input type="text" class="form-control" id="municipality" name="municipality" placeholder="Enter municipality" require="">
+            <input type="text" class="form-control" id="municipality" name="municipality" placeholder="Enter municipality" required>
         </div>
 
         <div class="form-group">
             <label for="ward">Ward</label>
-            <input type="text" class="form-control" id="ward" name="ward" placeholder="Enter ward" require="">
+            <input type="text" class="form-control" id="ward" name="ward" placeholder="Enter ward" required>
         </div>
 
         <div class="form-group">
             <label for="recentadd">Recent Address</label>
-            <input type="text" class="form-control" id="recentadd" name="recentadd" placeholder="Enter full recent address" require="">
+            <input type="text" class="form-control" id="recentadd" name="recentadd" placeholder="Enter full recent address" required>
         </div>
 
         <div class="form-group">
@@ -198,7 +198,7 @@ include('dashboardheader.php');
             move_uploaded_file($filetmp,$destinationfile1);
         }
          //checking
-        $checkExistance = "SELECT * FROM employee_registration WHERE email='$email' AND mobilenum = '$mobilenum'";
+        $checkExistance = "SELECT * FROM employee_registration WHERE email='$email'";
         $email_query_run = mysqli_query($con,$checkExistance);
         if(mysqli_num_rows($email_query_run) > 0)
         {
